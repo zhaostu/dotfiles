@@ -1,0 +1,10 @@
+[user]
+	name = Stu Zhao
+	email = z12y12l12@gmail.com
+[color]
+	ui = true
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
