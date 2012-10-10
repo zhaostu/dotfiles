@@ -29,7 +29,7 @@ unsymlink_and_restore(){
     # args: dest, backup_folder
     # Remove symlink at dest, then restore dest from backup folder.
 
-    backup_file = $2/`basename $1`
+    backup_file=$2/`basename $1`
 
     # Check whether backup_folder exists.
     if [ ! -d $2 ]; then
@@ -46,7 +46,7 @@ unsymlink_and_restore(){
     # Check whether the file to restore exists
     if [ -e $backup_file ] || [ -L $backup_file ]; then
         echo "Restoring '$1' from backup."
-        mv $2/`basename $1` $1
+        mv $backup_file $1
     else
         echo "Warning: Cannot find the backup file for '$1'."
     fi
