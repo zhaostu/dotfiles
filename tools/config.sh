@@ -8,5 +8,5 @@ BASE_PATH=$(readlink -f $TOOLS_PATH/..)
 BACKUP_PATH=$BASE_PATH/backup
 
 # List of dotfiles to install, seperate by space.
-DOTFILES=gitconfig vimrc
+DOTFILES='gitconfig vimrc'
 
