@@ -1,3 +1,17 @@
+" be iMproved
+set nocompatible
+
+" Required by vundle
+filetype off
+
+" Load vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
 " set 4 space tabs
 set expandtab
 set shiftwidth=4
@@ -22,7 +36,8 @@ set hlsearch
 set wildmenu
 
 " enable loading plugin files for file type
+" Also required by vundle
 filetype plugin indent on
 
-" color scheme.
+" color scheme
 colorscheme desert
