@@ -8,5 +8,5 @@ export TOOLS_PATH=$(dirname $(readlink -f $0))
 
 for file in $DOTFILES
 do
-    backup_and_symlink $INSTALL_PATH/.$file $BASE_PATH/$file $BACKUP_PATH
+    backup_and_symlink $INSTALL_PATH/.$file $FILES_PATH/$file $BACKUP_PATH
 done
