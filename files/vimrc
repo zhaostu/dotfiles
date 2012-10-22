@@ -53,3 +53,5 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+" Powerline
+set laststatus=2 " always show the status line
