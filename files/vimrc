@@ -4,7 +4,7 @@ set nocompatible
 " Required by vundle
 filetype off
 
-" Load vundle
+" load vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -41,9 +41,11 @@ set hlsearch
 set wildmenu
 
 " enable loading plugin files for file type
-" Also required by vundle
+" also required by vundle
 filetype plugin indent on
 
 " color scheme
+" degrade to 256 color in terminal.
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
