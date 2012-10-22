@@ -1,10 +1,10 @@
 " be iMproved
 set nocompatible
 
-" Required by vundle
+" required by Vundle
 filetype off
 
-" load vundle
+" load Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -44,8 +44,12 @@ set wildmenu
 " also required by vundle
 filetype plugin indent on
 
+" set terminal colors to 256
+set t_Co=256
+
 " color scheme
-" degrade to 256 color in terminal.
+" use degraded 256 color scheme
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
