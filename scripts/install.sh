@@ -10,3 +10,10 @@ for file in $DOTFILES
 do
     backup_and_symlink $INSTALL_PATH/.$file $FILES_PATH/$file $BACKUP_PATH
 done
+
+# Initialize all submodules.
+cd $BASE_PATH
+git submodule update --init
+
+# Install vim bundles through Vundle.
+vim +BundleInstall +qall
