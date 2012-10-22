@@ -12,6 +12,9 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
+Bundle 'Lokaltog/vim-powerline' " Powerline
+Bundle 'altercation/vim-colors-solarized' " Solarized color scheme
+
 " set 4 space tabs
 set expandtab
 set shiftwidth=4
@@ -27,7 +30,7 @@ set autoindent
 set number
 
 " enable syntax highlighting
-syntax on
+syntax enable
 
 " highlight searches
 set hlsearch
@@ -40,4 +43,5 @@ set wildmenu
 filetype plugin indent on
 
 " color scheme
-colorscheme desert
+set background=dark
+colorscheme solarized
