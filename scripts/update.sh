@@ -15,4 +15,4 @@ cd $BASE_PATH
 git submodule foreach git pull origin master
 
 # Update vim bundles through Vundle.
-vim +BundleInstall! +qall
+vim +BundleInstall! +BundleClean +qall
