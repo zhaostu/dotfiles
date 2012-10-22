@@ -12,8 +12,10 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-Bundle 'Lokaltog/vim-powerline' " Powerline
-Bundle 'altercation/vim-colors-solarized' " Solarized color scheme
+" Powerline
+Bundle 'Lokaltog/vim-powerline'
+" Solarized color scheme
+Bundle 'altercation/vim-colors-solarized'
 
 " set 4 space tabs
 set expandtab
