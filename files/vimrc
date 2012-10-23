@@ -16,6 +16,8 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 " Solarized color scheme
 Bundle 'altercation/vim-colors-solarized'
+" git wrapper
+Bundle 'tpope/vim-fugitive'
 
 " set 4 space tabs
 set expandtab
