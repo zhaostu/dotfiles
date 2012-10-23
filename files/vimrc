@@ -16,8 +16,6 @@ Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
 " Solarized color scheme
 Bundle 'altercation/vim-colors-solarized'
-" open files with minimum number of keystroke
-Bundle 'git://git.wincent.com/command-t.git'
 
 " set 4 space tabs
 set expandtab
