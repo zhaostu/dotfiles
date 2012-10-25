@@ -35,6 +35,9 @@ set autoindent
 " show line number
 set number
 
+" show colored 80th and 120th column
+set colorcolumn=80,120
+
 " enable syntax highlighting
 syntax enable
 
