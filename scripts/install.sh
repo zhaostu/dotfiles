@@ -17,3 +17,5 @@ git submodule update --init
 
 # Install vim bundles through Vundle.
 vim +BundleInstall +qall
+
+post_install

@@ -16,3 +16,5 @@ git submodule foreach git pull origin master
 
 # Update vim bundles through Vundle.
 vim +BundleInstall! +BundleClean +qall
+
+post_install

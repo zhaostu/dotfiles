@@ -51,3 +51,10 @@ unsymlink_and_restore(){
         echo "Warning: Cannot find the backup file for '$1'."
     fi
 }
+
+post_install(){
+    # Build command-t
+    cd $FILES_PATH/vim/bundle/command-t/ruby/command-t
+    ruby extconf.rb
+    make
+}
