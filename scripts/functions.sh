@@ -4,17 +4,6 @@ backup_and_symlink(){
     # args: dest, src, backup_folder
     # Backup dest to backup_folder, then create symlink dest -> src
 
-    # Check if backup folder exists.
-    if [ ! -d $3 ]; then
-        if [ ! -e $3 ]; then
-            echo "Backup folder does not exist. Creating a new one."
-            mkdir $3
-        else
-            echo "Error: Backup folder '$3' exists and is not a folder."
-            exit 1
-        fi
-    fi
-
     # Backup the dest to backup_folder
     if [ -e $1 ]; then
         echo "Backing up '$1' to the backup folder."
@@ -31,12 +20,6 @@ unsymlink_and_restore(){
 
     backup_file=$2/`basename $1`
 
-    # Check whether backup_folder exists.
-    if [ ! -d $2 ]; then
-        echo "Error: Backup folder does not exist."
-        exit 1
-    fi
-
     # Unsymlink
     if [ -L $1 ]; then
         echo "Unsymlinking '$1'."
@@ -47,9 +30,12 @@ unsymlink_and_restore(){
     if [ -e $backup_file ] || [ -L $backup_file ]; then
         echo "Restoring '$1' from backup."
         mv $backup_file $1
-    else
-        echo "Warning: Cannot find the backup file for '$1'."
     fi
+}
+
+pre_install(){
+    # Create the backup folder.
+    mkdir -p $BACKUP_PATH
 }
 
 post_install(){
