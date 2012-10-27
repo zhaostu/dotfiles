@@ -1,35 +1,43 @@
 #!/bin/sh
 
-backup_and_symlink(){
-    # args: dest, src, backup_folder
-    # Backup dest to backup_folder, then create symlink dest -> src
+install_file(){
+    # args: filename
+    # Backup target_file, then create symlink target_file -> source_file.
+    filename=$1
 
-    # Backup the dest to backup_folder
-    if [ -e $1 ]; then
-        echo "Backing up '$1' to the backup folder."
-        mv $1 $3
+    source_file=$FILE_PATH/$filename
+    target_file=$INSTALL_PATH/.$filename
+    backup_file=$BACKUP_PATH/$filename
+
+    # Backup
+    if [ -e $target_file ]; then
+        echo "Backing up '$target_file' to '$backup_file'."
+        mv $target_file $backup_file
     fi
-    # Create symlink dest -> src.
-    echo "Creating symlink for '$1'."
-    ln -s $2 $1
+
+    # Create symlink of target_file -> source_file
+    echo "Creating symlink for '$target_file'."
+    ln -s $source_file $target_file
 }
 
-unsymlink_and_restore(){
-    # args: dest, backup_folder
-    # Remove symlink at dest, then restore dest from backup folder.
+uninstall_file(){
+    # args: filename
+    # Remove symlink target_file -> source_file, then restore target_file.
+    filename=$1
 
-    backup_file=$2/`basename $1`
+    target_file=$INSTALL_PATH/.$filename
+    backup_file=$BACKUP_PATH/$filename
 
-    # Unsymlink
-    if [ -L $1 ]; then
-        echo "Unsymlinking '$1'."
-        rm $1
+    # Remove symlink from target_file
+    if [ -L $target_file ]; then
+        echo "Removing installed symlink '$target_file'."
+        unlink $target_file
     fi
 
-    # Check whether the file to restore exists
-    if [ -e $backup_file ] || [ -L $backup_file ]; then
-        echo "Restoring '$1' from backup."
-        mv $backup_file $1
+    # Restore
+    if [ -e $backup_file ]; then
+        echo "Restoring '$target_file' from backup."
+        mv $backup_file $target_file
     fi
 }
 

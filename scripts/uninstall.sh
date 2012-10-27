@@ -8,5 +8,5 @@ export TOOLS_PATH=$(dirname $(readlink -f $0))
 
 for file in $DOTFILES
 do
-    unsymlink_and_restore $INSTALL_PATH/.$file $BACKUP_PATH
+    uninstall_file $file
 done

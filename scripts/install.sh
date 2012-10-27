@@ -10,7 +10,7 @@ pre_install
 
 for file in $DOTFILES
 do
-    backup_and_symlink $INSTALL_PATH/.$file $FILES_PATH/$file $BACKUP_PATH
+    install_file $file
 done
 
 # Initialize and update all submodules.
