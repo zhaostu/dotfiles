@@ -5,7 +5,7 @@ install_file(){
     # Backup target_file, then create symlink target_file -> source_file.
     filename=$1
 
-    source_file=$FILE_PATH/$filename
+    source_file=$FILES_PATH/$filename
     target_file=$INSTALL_PATH/.$filename
     backup_file=$BACKUP_PATH/$filename
 
