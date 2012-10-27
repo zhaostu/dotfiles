@@ -4,7 +4,7 @@
 INSTALL_PATH=~
 
 # The path of the project.
-BASE_PATH=$(readlink -f $TOOLS_PATH/..)
+BASE_PATH=$(readlink -f $SCRIPTS_PATH/..)
 
 # The path containing the pre-configured dotfiles.
 FILES_PATH=$BASE_PATH/files
