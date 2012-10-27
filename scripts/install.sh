@@ -11,11 +11,9 @@ do
     backup_and_symlink $INSTALL_PATH/.$file $FILES_PATH/$file $BACKUP_PATH
 done
 
-# Initialize all submodules.
+# Initialize and update all submodules.
 cd $BASE_PATH
 git submodule update --init
-
-# Install vim bundles through Vundle.
-vim +BundleInstall +qall
+git submodule foreach git pull origin master
 
 post_install
