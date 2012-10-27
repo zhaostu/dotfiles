@@ -7,7 +7,7 @@ export TOOLS_PATH=$(dirname $(readlink -f $0))
 $TOOLS_PATH/uninstall.sh
 
 # Update the project itself.
-cd $BASE_PATH
+cd $TOOLS_PATH
 git pull origin master
 
 # Install the new version.
