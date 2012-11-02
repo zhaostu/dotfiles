@@ -30,6 +30,9 @@ set softtabstop=4
 " set indent
 set autoindent
 
+" keep some space above and below the cursor
+set scrolloff=10
+
 " show line number
 set number
 
