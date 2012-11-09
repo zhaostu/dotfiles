@@ -33,6 +33,10 @@ set autoindent
 " keep some space above and below the cursor
 set scrolloff=10
 
+" enable persistent undos
+set undodir=/tmp
+set undofile
+
 " show line number
 set number
 
