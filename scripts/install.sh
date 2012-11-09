@@ -16,6 +16,7 @@ done
 # Initialize and update all submodules.
 cd $BASE_PATH
 git submodule update --init
-git submodule foreach git pull origin master
+git submodule foreach git checkout master
+git submodule foreach git pull
 
 post_install
