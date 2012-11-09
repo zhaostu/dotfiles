@@ -34,4 +34,8 @@ plugins=(vi-mode git command-not-found per-directory-history)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+# Disable auto correction
+unsetopt correct_all
+
+# Update dotfiles.
 alias dotup=$HOME/.dotfiles/scripts/update.sh
