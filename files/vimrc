@@ -37,8 +37,8 @@ set scrolloff=10
 set undodir=/tmp
 set undofile
 
-" show line number
-set number
+" show relative line number
+set relativenumber
 
 " show colored 80th and 120th column
 set colorcolumn=80,120
