@@ -71,3 +71,6 @@ set laststatus=2 " always show the status line
 " up and down movements by screen line
 nnoremap k gk
 nnoremap j gj
+
+" shortcut for typing :noh
+nnoremap <Leader><space> :nohlsearch<CR>
