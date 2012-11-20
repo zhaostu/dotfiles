@@ -20,6 +20,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 " fast file access in vim
 Bundle 'git://git.wincent.com/command-t.git'
+" code search with ack
+Bundle 'mileszs/ack.vim'
 
 " set 4 space tabs
 set expandtab

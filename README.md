@@ -8,6 +8,7 @@ This is my personal dotfiles. Feel free to take a look inside.
 
 ### Optional requirements
  * `ruby-dev` command-t plugin
+ * `ack-grep` ack.vim plugin
 
 ## Install
 Installing these dotfiles are easy, simply execute this command
