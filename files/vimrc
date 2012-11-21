@@ -23,6 +23,10 @@ Bundle 'git://git.wincent.com/command-t.git'
 " code search with ack
 Bundle 'mileszs/ack.vim'
 
+" enable loading plugin files for file type
+" also required by vundle
+filetype plugin indent on
+
 " set 4 space tabs
 set expandtab
 set shiftwidth=4
@@ -45,30 +49,25 @@ set relativenumber
 " show colored 80th and 120th column
 set colorcolumn=80,120
 
-" enable syntax highlighting
-syntax enable
-
-" highlight searches
-set hlsearch
+" Powerline
+set laststatus=2 " always show the status line
 
 " enable autocomplete menu
 set wildmenu
 
-" enable loading plugin files for file type
-" also required by vundle
-filetype plugin indent on
+" highlight searches
+set hlsearch
 
 " set terminal colors to 256
 set t_Co=256
 
-" color scheme
-" use degraded 256 color scheme
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+" enable syntax highlighting
+syntax enable
 
-" Powerline
-set laststatus=2 " always show the status line
+" color scheme
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " up and down movements by screen line
 nnoremap k gk
