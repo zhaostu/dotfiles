@@ -49,6 +49,10 @@ set relativenumber
 " show colored 80th and 120th column
 set colorcolumn=80,120
 
+" show invisibles
+set list
+set listchars=tab:▸\ ,eol:¬
+
 " Powerline
 set laststatus=2 " always show the status line
 
@@ -67,6 +71,7 @@ syntax enable
 " color scheme
 set background=dark
 let g:solarized_termcolors=256
+let g:solarized_visibility='low'
 colorscheme solarized
 
 " up and down movements by screen line
