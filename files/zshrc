@@ -39,3 +39,6 @@ unsetopt correct_all
 
 # Update dotfiles.
 alias dotup=$HOME/.dotfiles/scripts/update.sh
+
+# MySQL
+alias my=mysql -u root -p
