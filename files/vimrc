@@ -39,6 +39,9 @@ set autoindent
 " keep some space above and below the cursor
 set scrolloff=10
 
+" enable the use of mouse
+set mouse=a
+
 " enable persistent undos
 set undodir=/tmp
 set undofile
