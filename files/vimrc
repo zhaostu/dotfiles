@@ -84,3 +84,9 @@ nnoremap j gj
 
 " shortcut for typing :noh
 nnoremap <Leader><space> :nohlsearch<CR>
+
+" shortcut for NERDTree
+nnoremap <Leader>e :NERDTreeToggle<CR>
+
+" shortcut for Ack
+nnoremap <Leader>a :Ack 
