@@ -8,3 +8,4 @@
 	ci = commit -v
 	st = status
 	br = branch
+    tree = log --oneline --graph --all --decorate
