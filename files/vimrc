@@ -67,6 +67,10 @@ set wildmenu
 " highlight searches
 set hlsearch
 
+" ignore case smartly for searchs
+set ignorecase
+set smartcase
+
 " set terminal colors to 256
 set t_Co=256
 
