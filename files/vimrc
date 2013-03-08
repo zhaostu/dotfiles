@@ -47,15 +47,24 @@ set scrolloff=10
 " enable the use of mouse
 set mouse=a
 
-" enable persistent undos
-set undodir=/tmp
-set undofile
+if has('persistent_undo')
+    " enable persistent undos
+    set undodir=/tmp
+    set undofile
+endif
 
-" show relative line number
-set relativenumber
+if exists('+relativenumber')
+    " show relative line number
+    set relativenumber
+else
+    " show line number
+    set number
+endif
 
-" show colored 80th and 120th column
-set colorcolumn=80,120
+if exists('+colorcolumn')
+    " show colored 80th and 120th column
+    set colorcolumn=80,120
+endif
 
 " show invisibles
 set list
