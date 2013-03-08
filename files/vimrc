@@ -90,9 +90,13 @@ set t_Co=256
 syntax enable
 
 " color scheme
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+try
+    set background=dark
+    let g:solarized_termcolors=256
+    colorscheme solarized
+catch
+    colorscheme desert
+endtry
 
 " up and down movements by screen line
 nnoremap k gk
