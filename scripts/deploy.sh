@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Exit if command fails or variable is not set.
+set -e
+set -u
+
 TARGET_PATH=~/.dotfiles
 
 # Check whether TARGET_PATH exists.
