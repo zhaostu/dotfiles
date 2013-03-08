@@ -42,7 +42,7 @@ bindkey -M viins "^R" history-incremental-search-backward
 bindkey -M vicmd "^R" history-incremental-search-backward
 
 # Update dotfiles.
-alias dotup="$HOME/.dotfiles/scripts/update.sh"
+alias dotfiles-update="$HOME/.dotfiles/scripts/update.sh"
 
 # ack
 alias ack="ack-grep"
