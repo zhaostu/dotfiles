@@ -1,6 +1,9 @@
 " be iMproved
 set nocompatible
 
+" set the character encoding
+set encoding=utf-8
+
 " required by Vundle
 filetype off
 
