@@ -1,11 +1,11 @@
 [user]
-	name = Stu Zhao
-	email = z12y12l12@gmail.com
+    name = Stu Zhao
+    email = z12y12l12@gmail.com
 [color]
-	ui = true
+    ui = true
 [alias]
-	co = checkout
-	ci = commit -v
-	st = status
-	br = branch
+    co = checkout
+    ci = commit -v
+    st = status
+    br = branch
     tree = log --oneline --graph --all --decorate
