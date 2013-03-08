@@ -12,9 +12,9 @@ $SCRIPTS_PATH/uninstall.sh
 
 # Update the project itself.
 cd $SCRIPTS_PATH
-git stash
+retval=$(git stash save -q)
 git pull origin master
-git stash pop
+retval=$(git stash pop -q)
 
 # Install the new version.
 $SCRIPTS_PATH/install.sh
