@@ -13,4 +13,4 @@ FILES_PATH=$BASE_PATH/files
 BACKUP_PATH=$BASE_PATH/backup
 
 # List of dotfiles to install, seperate by space.
-DOTFILES='gitconfig vim vimrc oh-my-zsh zshrc fonts.conf'
+DOTFILES='gitconfig vim vimrc oh-my-zsh zshrc'
