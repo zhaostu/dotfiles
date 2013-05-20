@@ -9,3 +9,5 @@
     st = status
     br = branch
     tree = log --oneline --graph --all --decorate
+[push]
+    default = simple
