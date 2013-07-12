@@ -12,7 +12,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " Powerline
@@ -27,6 +27,8 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdtree'
 " code search with ack
 Bundle 'mileszs/ack.vim'
+" Google Go support
+Bundle 'jnwhiteh/vim-golang'
 
 " enable loading plugin files for file type
 " also required by vundle
