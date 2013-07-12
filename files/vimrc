@@ -46,6 +46,9 @@ if has('autocmd')
     autocmd FileType html* setlocal shiftwidth=2 tabstop=2 softtabstop=2
     " Google Go uses tabs characters and don't need to show invisibles
     autocmd FileType go,godoc setlocal noexpandtab nolist
+    " Makefile don't need to show invisibles
+    autocmd FileType make setlocal nolist
+
 endif
 
 " set indent
