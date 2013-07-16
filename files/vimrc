@@ -22,7 +22,7 @@ Bundle 'altercation/vim-colors-solarized'
 " git wrapper
 Bundle 'tpope/vim-fugitive'
 " fast file access in vim
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'kien/ctrlp.vim'
 " filesystem explorer
 Bundle 'scrooloose/nerdtree'
 " code search with ack
@@ -90,6 +90,9 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_fugitive_prefix = '⎇  '
 let g:airline_theme='solarized'
+
+" CtrlP
+let g:ctrlp_map='<Leader>t'
 
 " enable autocomplete menu
 set wildmenu

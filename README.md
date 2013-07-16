@@ -7,7 +7,6 @@ This is my personal dotfiles. Feel free to take a look inside.
  * `zsh`
 
 ### Optional requirements
- * `ruby-dev` command-t plugin
  * `ack-grep` ack.vim plugin
 
 ## Install
