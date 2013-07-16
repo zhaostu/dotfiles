@@ -15,8 +15,8 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-" Powerline
-Bundle 'Lokaltog/vim-powerline'
+" Airline
+Bundle 'bling/vim-airline'
 " Solarized color scheme
 Bundle 'altercation/vim-colors-solarized'
 " git wrapper
@@ -83,8 +83,13 @@ endif
 set list
 set listchars=tab:▸\ ,trail:\ 
 
-" Powerline
+" Airline
 set laststatus=2 " always show the status line
+set noshowmode " do not show mode message on last line
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+let g:airline_fugitive_prefix = '⎇  '
+let g:airline_theme='solarized'
 
 " enable autocomplete menu
 set wildmenu
@@ -110,6 +115,9 @@ try
 catch
     colorscheme desert
 endtry
+
+" 100ms key code delay
+set ttimeoutlen=100
 
 " up and down movements by screen line
 nnoremap k gk
