@@ -88,7 +88,7 @@ set laststatus=2 " always show the status line
 set noshowmode " do not show mode message on last line
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_fugitive_prefix = '⎇  '
+let g:airline_branch_prefix='⎇  '
 let g:airline_theme='solarized'
 
 " CtrlP
