@@ -27,6 +27,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 " code search with ack
 Bundle 'mileszs/ack.vim'
+" easily add/change/delete surroundings
+Bundle 'tpope/vim-surround'
 " Google Go support
 Bundle 'jnwhiteh/vim-golang'
 
