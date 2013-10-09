@@ -10,4 +10,4 @@
     br = branch
     tree = log --oneline --graph --all --decorate
 [push]
-    default = matching
+    default = current
