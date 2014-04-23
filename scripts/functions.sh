@@ -46,7 +46,7 @@ install_custom_file(){
     # Create symlink target_file -> filename.
 
     filename=$1
-    target_file=$2
+    target_file=$INSTALL_PATH/$2
 
     source_file=$FILES_PATH/$filename
 
@@ -58,7 +58,7 @@ install_custom_file(){
 uninstall_custom_file(){
     # args: target_file
     # Remove symlink target_file -> source_file.
-    target_file=$1
+    target_file=$INSTALL_PATH/$1
 
     # Remove symlink from target_file
     if [ -L $target_file ]; then
