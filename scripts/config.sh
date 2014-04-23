@@ -12,5 +12,10 @@ FILES_PATH=$BASE_PATH/files
 # The path to backup existing dotfiles from the INSTALL_PATH.
 BACKUP_PATH=$BASE_PATH/backup
 
-# List of dotfiles to install, seperate by space.
+# List of dotfiles to install to the home directory, seperate by space.
 DOTFILES='gitconfig vim vimrc oh-my-zsh zshrc'
+
+# List of files to install to custom position, seperated by newline.
+# On each line, put the file and the target filename, seperated by space.
+CUSTOM_FILES='zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting'
+

@@ -17,6 +17,18 @@ do
     install_file $file
 done
 
+i=0
+for file in $CUSTOM_FILES
+do
+    if [ $i -eq 0 ]; then
+        filename=$file
+    else
+        target_file=$file
+        install_custom_file $filename $target_file
+    fi
+    i=$(( ($i+1)%2 ))
+done
+
 # Initialize and update all submodules.
 cd $BASE_PATH
 git submodule update --init > /dev/null 2>&1

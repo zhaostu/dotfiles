@@ -41,6 +41,32 @@ uninstall_file(){
     fi
 }
 
+install_custom_file(){
+    # args: filename, target_file
+    # Create symlink target_file -> filename.
+
+    filename=$1
+    target_file=$2
+
+    source_file=$FILES_PATH/$filename
+
+    # Create symlink of target_file -> source_file
+    echo "Creating symlink for '$target_file'."
+    ln -s $source_file $target_file
+}
+
+uninstall_custom_file(){
+    # args: target_file
+    # Remove symlink target_file -> source_file.
+    target_file=$1
+
+    # Remove symlink from target_file
+    if [ -L $target_file ]; then
+        echo "Removing installed symlink '$target_file'."
+        unlink $target_file
+    fi
+}
+
 pre_install(){
     # Create the backup folder.
     mkdir -p $BACKUP_PATH
