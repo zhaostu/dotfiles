@@ -17,6 +17,11 @@ do
     install_file $file
 done
 
+# Initialize and update all submodules.
+cd $BASE_PATH
+git submodule update --init > /dev/null 2>&1
+git submodule foreach 'git checkout master && git pull' > /dev/null 2>&1
+
 i=0
 for file in $CUSTOM_FILES
 do
@@ -28,10 +33,5 @@ do
     fi
     i=$(( ($i+1)%2 ))
 done
-
-# Initialize and update all submodules.
-cd $BASE_PATH
-git submodule update --init > /dev/null 2>&1
-git submodule foreach 'git checkout master && git pull' > /dev/null 2>&1
 
 post_install
