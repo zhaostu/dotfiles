@@ -14,7 +14,6 @@ $SCRIPTS_PATH/uninstall.sh
 cd $SCRIPTS_PATH
 git stash save -q && :
 git pull origin master
-git stash pop -q && :
 
 # Install the new version.
 $SCRIPTS_PATH/install.sh
