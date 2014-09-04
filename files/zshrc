@@ -52,4 +52,3 @@ alias my="mysql -u root -p"
 
 # sudo shortcuts
 alias apt-get="sudo apt-get"
-alias docker="sudo docker"
