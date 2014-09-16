@@ -13,24 +13,24 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Airline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 " Solarized color scheme
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 " git wrapper
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " fast file access in vim
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " filesystem explorer
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " code search with ack
-Bundle 'mileszs/ack.vim'
+Plugin 'mileszs/ack.vim'
 " easily add/change/delete surroundings
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 " Google Go support
-Bundle 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 
 " enable loading plugin files for file type
 " also required by vundle
