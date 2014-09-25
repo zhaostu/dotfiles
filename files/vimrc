@@ -65,7 +65,7 @@ set mouse=a
 
 if has('persistent_undo')
     " enable persistent undos
-    set undodir=/tmp
+    set undodir=~/.vimundo
     set undofile
 endif
 
