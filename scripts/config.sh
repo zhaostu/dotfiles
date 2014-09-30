@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # The path where the dotfiles should be installed.
-INSTALL_PATH=~
+INSTALL_PATH=$HOME
 
 # The path of the project.
 BASE_PATH=$(readlink -f $SCRIPTS_PATH/..)

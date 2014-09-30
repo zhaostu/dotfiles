@@ -75,4 +75,7 @@ pre_install(){
 post_install(){
     # Install/update/clean vim bundles through Vundle.
     vim +BundleInstall! +BundleClean +qall < /dev/tty
+
+    # Create Vim's undo directory
+    mkdir -p $HOME/.vimundo
 }
