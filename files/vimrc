@@ -137,3 +137,6 @@ nnoremap <Leader>e :NERDTreeToggle<CR>
 
 " shortcut for Ack
 nnoremap <Leader>a :Ack 
+
+" remove trailing whitespaces
+nnoremap <silent> <Leader>r :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
