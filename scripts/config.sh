@@ -17,5 +17,5 @@ DOTFILES='gitconfig vim vimrc oh-my-zsh zshrc'
 
 # List of files to install to custom position, seperated by newline.
 # On each line, put the file and the target filename, seperated by space.
-CUSTOM_FILES='zsh-syntax-highlighting .oh-my-zsh/custom/plugins/zsh-syntax-highlighting'
-
+CUSTOM_FILES='zsh-syntax-highlighting .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+stu.zsh-theme .oh-my-zsh/custom/themes/stu.zsh-theme'
