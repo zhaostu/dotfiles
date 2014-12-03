@@ -52,6 +52,7 @@ install_custom_file(){
 
     # Create symlink of target_file -> source_file
     echo "Creating symlink for '$target_file'."
+    mkdir -p $(dirname $target_file)
     ln -s $source_file $target_file
 }
 
