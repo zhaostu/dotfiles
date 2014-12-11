@@ -1,49 +1,41 @@
 # This custom theme is modified from the ys terminal theme (See below).
-###############################################################################
-# Clean, simple, compatible and meaningful.
-# Tested on Linux, Unix and Windows under ANSI colors.
-# It is recommended to use with a dark background and the font Inconsolata.
-# Colors: black, red, green, yellow, *blue, magenta, cyan, and white.
-#
-: http://ysmood.org/wp/2013/03/my-ys-terminal-theme/
-# Mar 2013 ys
 
-# Machine name.
-function box_name {
-    [ -f ~/.box-name ] && cat ~/.box-name || echo $HOST
-}
+# Git settings
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[208]%}‹"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$FG[208]%}›%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$FG[154]%}✓"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$FG[197]%}⚡"
 
-# Directory info.
+# Virtualenv settings
+ZSH_THEME_VIRTUALENV_PREFIX="%{$FG[244]%}‹"
+ZSH_THEME_VIRTUALENV_SUFFIX="›%{$reset_color%} "
+
 local current_dir='${PWD/#$HOME/~}'
-
-# Git info.
 local git_info='$(git_prompt_info)'
-ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[white]%}on%{$reset_color%} git:%{$fg[cyan]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}x"
-ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}o"
+local virtualenv_info='$(virtualenv_prompt_info)'
 
-# Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
-PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%{$fg[cyan]%}%n \
-%{$fg[white]%}at \
-%{$fg[green]%}$(box_name) \
-%{$fg[white]%}in \
-%{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
-${git_info} \
-%{$fg[white]%}[%*]
-%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
-
-if [[ "$USER" == "root" ]]; then
-PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%{$bg[yellow]%}%{$fg[cyan]%}%n%{$reset_color%} \
-%{$fg[white]%}at \
-%{$fg[green]%}$(box_name) \
-%{$fg[white]%}in \
-%{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
-${git_info} \
-%{$fg[white]%}[%*]
-%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
+# Different caret and look for root.
+if [ $UID -eq 0 ]; then
+    local CARET="#"
+    local USER_COLOR=$FG[197]$BG[052]
+    local CARET_COLOR=$FG[197]
+else
+    local CARET="$"
+    local USER_COLOR=$FG[154]
+    local CARET_COLOR=$FG[154]
 fi
+
+local return_code="%(?..%{$FG[197]%}%? ↵%{$reset_color%})"
+RPS1='${return_code}'
+
+# user@host:pwd git_info virtualenvinfo time \n caret
+PROMPT="
+%B%{$USER_COLOR%}%n%{$reset_color%}\
+%B%{$FG[015]%}@\
+%{$FG[081]%}%m\
+%{$FG[015]%}:\
+%{$reset_color%}%{$FG[222]%}${current_dir}%{$reset_color%} \
+${git_info}\
+${virtualenv_info}\
+%{$FG[015]%}[%B%*%b]
+%{%B$CARET_COLOR%}$CARET %{$reset_color%}"
