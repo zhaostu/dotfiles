@@ -12,6 +12,10 @@ $SCRIPTS_PATH/uninstall.sh
 
 # Update the project itself.
 cd $SCRIPTS_PATH
+
+# The reason to config user email / name is so that `git stash` would work.
+git config user.email "z12y12l12@gmail.com"
+git config user.name "Stu Zhao"
 git stash save -q && :
 git pull origin master
 
