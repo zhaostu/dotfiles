@@ -19,6 +19,8 @@ Plugin 'gmarik/vundle'
 Plugin 'bling/vim-airline'
 " Solarized color scheme
 Plugin 'altercation/vim-colors-solarized'
+" Molokai color scheme
+Plugin 'tomasr/molokai'
 " git wrapper
 Plugin 'tpope/vim-fugitive'
 " fast file access in vim
@@ -92,7 +94,7 @@ set noshowmode " do not show mode message on last line
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_branch_prefix='⎇  '
-let g:airline_theme='solarized'
+let g:airline_theme='molokai'
 
 " CtrlP
 let g:ctrlp_map='<Leader>t'
@@ -115,9 +117,13 @@ syntax enable
 
 " color scheme
 try
-    set background=dark
-    let g:solarized_termcolors=256
-    colorscheme solarized
+    " For solarized
+    "set background=dark
+    "let g:solarized_termcolors=256
+    "colorscheme solarized
+    let g:molokai_original = 1
+    let g:rehash256 = 1
+    colorscheme molokai
 catch
     colorscheme desert
 endtry
