@@ -25,7 +25,7 @@ else
     local CARET_COLOR=$FG[154]
 fi
 
-local return_code="%(?..%{$FG[197]%}%? ↵%{$reset_color%})"
+local return_code="%(?..%{$FG[197]%}(%?)%{$reset_color%})"
 RPS1='${return_code}'
 
 # user@host:pwd git_info virtualenvinfo time \n caret
