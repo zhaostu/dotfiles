@@ -54,5 +54,5 @@ alias my="mysql -u root -p"
 alias apt-get="sudo apt-get"
 
 # Set environment variables for Go
-GOPATH=$HOME/go
-PATH=$PATH:$GOPATH/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
