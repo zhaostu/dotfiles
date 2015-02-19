@@ -23,6 +23,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 " git wrapper
 Plugin 'tpope/vim-fugitive'
+" gitk/gitg for vim
+Plugin 'gregsexton/gitv'
 " fast file access in vim
 Plugin 'kien/ctrlp.vim'
 " filesystem explorer
