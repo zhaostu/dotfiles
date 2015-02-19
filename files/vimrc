@@ -93,9 +93,12 @@ set listchars=tab:▸\ ,trail:\
 " Airline
 set laststatus=2 " always show the status line
 set noshowmode " do not show mode message on last line
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.branch='⎇  '
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_symbols.branch='⎇  '
 let g:airline_theme='molokai'
 
 " CtrlP
