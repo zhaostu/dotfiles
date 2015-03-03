@@ -48,7 +48,7 @@ alias dotfiles-update="$HOME/.dotfiles/scripts/update.sh"
 alias ack="ack-grep"
 
 # MySQL
-alias my="mysql -u root -p"
+alias my="mysql -p"
 
 # sudo shortcuts
 alias apt-get="sudo apt-get"
