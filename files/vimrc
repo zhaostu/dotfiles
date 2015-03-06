@@ -35,6 +35,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
 " Google Go support
 Plugin 'fatih/vim-go'
+if v:version >= 704
+    " port of Sublime Text's multiple selection feature
+    Plugin 'terryma/vim-multiple-cursors'
+endif
 
 " enable loading plugin files for file type
 " also required by vundle
