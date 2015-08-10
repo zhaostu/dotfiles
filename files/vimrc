@@ -37,6 +37,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 " Google Go support
 Plugin 'fatih/vim-go'
+" Coffeescript support (syntax only)
+Plugin 'strogonoff/vim-coffee-script'
 if v:version >= 704
     " port of Sublime Text's multiple selection feature
     Plugin 'terryma/vim-multiple-cursors'
