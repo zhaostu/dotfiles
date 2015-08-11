@@ -58,6 +58,8 @@ set softtabstop=4
 if has('autocmd')
     " html 2 space tabs
     autocmd FileType html* setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    " coffeescript 2 space tabs
+    autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 softtabstop=2
     " Google Go uses tabs characters and don't need to show invisibles
     autocmd FileType go,godoc setlocal noexpandtab nolist
     " Makefile don't need to show invisibles
