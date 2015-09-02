@@ -56,3 +56,9 @@ alias apt-get="sudo apt-get"
 # Set environment variables for Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Set up Google Cloud SDK
+if [ -d $HOME/google-cloud-sdk ]; then
+    source $HOME/google-cloud-sdk/path.zsh.inc
+    source $HOME/google-cloud-sdk/completion.zsh.inc
+fi
