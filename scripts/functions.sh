@@ -77,6 +77,11 @@ post_install(){
     # Install/update/clean vim bundles through Vundle.
     vim +BundleInstall! +BundleClean +qall < /dev/tty
 
+    # Install/update Go binaries if Go is installed.
+    if which go; then
+        vim +GoInstallBinaries +GoUpdateBinaries +qall < /dev/tty
+    fi
+
     # Create Vim's undo directory
     mkdir -p $HOME/.vimundo
 }
