@@ -12,7 +12,7 @@ GIT_STATUS_FLAG='--porcelain --ignore-submodules --untracked-files=no'
 GIT_DIRTY=$(cd $SCRIPTS_PATH; git status $GIT_STATUS_FLAG 2> /dev/null | tail -n1)
 
 if [ -n "$GIT_DIRTY" ]; then
-    echo -e "\e[33mYour installation folder has uncommitted changes. Aborting.\e[39m"
+    echo "Your installation folder has uncommitted changes. Aborting."
     exit 1
 fi
 
