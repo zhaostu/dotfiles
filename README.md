@@ -8,6 +8,9 @@ This is my personal dotfiles. Feel free to take a look inside.
 
 ### Optional requirements
  * `ack-grep` ack.vim plugin
+#### Python requirements
+ * `flake8` Python syntax and style checker
+ * `virtualenvwrapper` wrapper for Python virtualenv
 
 ## Install
 Installing these dotfiles are easy, simply execute this command
