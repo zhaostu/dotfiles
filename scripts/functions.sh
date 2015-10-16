@@ -79,7 +79,7 @@ post_install(){
 
     # Install/update Go binaries if Go is installed.
     if which go; then
-        vim +GoInstallBinaries +GoUpdateBinaries +qall < /dev/tty
+        vim +GoInstallBinaries +qall < /dev/tty
     fi
 
     # Create Vim's undo directory
