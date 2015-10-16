@@ -9,7 +9,7 @@ This is my personal dotfiles. Feel free to take a look inside.
 ### Optional requirements
  * `ack-grep` ack.vim plugin
 
-#### Python requirements
+#### Python
  * `flake8` Python syntax and style checker
  * `virtualenvwrapper` wrapper for Python virtualenv
 
