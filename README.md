@@ -32,4 +32,5 @@ To change the login shell to `zsh`, execute the following command:
 
 ## Update
 Execute the following command in the shell:
+
     dotfiles-update
