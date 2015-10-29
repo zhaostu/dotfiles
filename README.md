@@ -7,7 +7,7 @@ This is my personal dotfiles. Feel free to take a look inside.
  * `zsh`
 
 ### Optional requirements
- * `ack-grep` ack.vim plugin
+ * `silversearcher-ag` or `ack-grep` code searching like grep
 
 #### Python
  * `flake8` Python syntax and style checker
