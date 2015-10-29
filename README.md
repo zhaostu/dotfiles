@@ -13,6 +13,9 @@ This is my personal dotfiles. Feel free to take a look inside.
  * `flake8` Python syntax and style checker
  * `virtualenvwrapper` wrapper for Python virtualenv
 
+#### i3
+ * `i3` tile window manager
+
 ## Install
 Installing these dotfiles are easy, simply execute this command
 in your shell:
