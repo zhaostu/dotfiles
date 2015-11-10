@@ -39,10 +39,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'fatih/vim-go'
 " Coffeescript support (syntax only)
 Plugin 'strogonoff/vim-coffee-script'
-if v:version >= 704
-    " port of Sublime Text's multiple selection feature
-    Plugin 'terryma/vim-multiple-cursors'
-endif
+" Auto close delimiters
+Plugin 'cohama/lexima.vim'
 
 " enable loading plugin files for file type
 " also required by vundle
