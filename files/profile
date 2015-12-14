@@ -1,0 +1,8 @@
+# set PATH so it includes user's private bin if it exists
+if [ -d $HOME/bin ]; then
+    export PATH=$HOME/bin:$PATH
+fi
+
+# Set environment variables for Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
