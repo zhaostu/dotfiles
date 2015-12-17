@@ -16,6 +16,7 @@ work on the latest Ubuntu LTS.
 
 #### i3
  * `i3` tile window manager
+ * `fonts-inconsolata` monospace font
 
 ## Install
 Installing these dotfiles are easy, simply execute this command
