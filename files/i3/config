@@ -180,7 +180,7 @@ bar {
     # i3bar position
     position top
     status_command i3status --config ~/.i3/i3status.conf
-    font pango:Inconsolata Medium 9
+    font pango:Inconsolata Medium 11
     colors {
         separator   #666666
         background  #222222
