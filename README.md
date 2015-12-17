@@ -1,6 +1,6 @@
 # Stu's Dotfiles
 This is my personal dotfiles. Feel free to take a look inside. It is meant to
-work on the latest Ubuntu LTS.
+work on the latest Ubuntu.
 
 ## Requirements
  * `git`
@@ -15,7 +15,7 @@ work on the latest Ubuntu LTS.
  * `flake8` Python syntax and style checker
 
 #### i3
- * `i3` tile window manager
+ * `i3` tile window manager (Official [Ubuntu repository](https://i3wm.org/docs/repositories.html#_ubuntu_repository))
  * `fonts-inconsolata` monospace font
 
 ## Install
