@@ -140,7 +140,7 @@ set smartcase
 " set terminal colors to 256
 set t_Co=256
 
-" set guifont
+" set font in vim gui
 if has('gui_running')
   set guifont=Inconsolata\ Medium\ 12
 endif
@@ -160,6 +160,10 @@ try
 catch
     colorscheme desert
 endtry
+
+" more natural splitting
+set splitbelow
+set splitright
 
 " 100ms key code delay
 set ttimeoutlen=100
