@@ -140,6 +140,11 @@ set smartcase
 " set terminal colors to 256
 set t_Co=256
 
+" set guifont
+if has('gui_running')
+  set guifont=Inconsolata\ Medium\ 12
+endif
+
 " enable syntax highlighting
 syntax enable
 
