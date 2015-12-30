@@ -133,6 +133,9 @@ set wildmenu
 " highlight searches
 set hlsearch
 
+" incremental search
+set incsearch
+
 " ignore case smartly for searchs
 set ignorecase
 set smartcase
