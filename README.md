@@ -17,6 +17,7 @@ work on the latest Ubuntu.
 #### i3
  * `i3` tile window manager (Official [Ubuntu repository](https://i3wm.org/docs/repositories.html#_ubuntu_repository))
  * `fonts-inconsolata` monospace font
+ * `xbacklight` change screen brightness
 
 ## Install
 Installing these dotfiles are easy, simply execute this command
