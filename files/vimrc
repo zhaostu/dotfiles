@@ -146,7 +146,7 @@ set smartcase
 " set terminal colors to 256
 set t_Co=256
 
-" set font in vim gui
+" set font in Vim GUI
 if has('gui_running')
   set guifont=Inconsolata\ Medium\ 12
 endif
