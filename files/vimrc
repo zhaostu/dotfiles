@@ -26,7 +26,7 @@ Plugin 'tpope/vim-fugitive'
 " gitk/gitg for Vim
 Plugin 'gregsexton/gitv'
 " fast file access in Vim
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 " file system explorer
 Plugin 'scrooloose/nerdtree'
 " code search with ack
