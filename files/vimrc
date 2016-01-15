@@ -143,9 +143,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-" enable spell checking
-set spell
-
 " set terminal colors to 256
 set t_Co=256
 
@@ -178,18 +175,24 @@ set splitright
 " 100ms key code delay
 set ttimeoutlen=100
 
+" set leader key to ","
+let mapleader = ","
+
 " up and down movements by screen line
 nnoremap k gk
 nnoremap j gj
 
 " shortcut for typing :noh
-nnoremap <Leader><space> :nohlsearch<CR>
+nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
 " shortcut for NERDTree
-nnoremap <Leader>e :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>e :NERDTreeToggle<CR>
 
 " shortcut for Ack
 nnoremap <Leader>a :Ack 
+
+" shortcut for toggling spell checking
+nnoremap <silent> <Leader>s :set spell!<CR>
 
 " remove trailing whitespace characters
 nnoremap <silent> <Leader>r :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
