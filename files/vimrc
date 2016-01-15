@@ -143,6 +143,9 @@ set incsearch
 set ignorecase
 set smartcase
 
+" enable spell checking
+set spell
+
 " set terminal colors to 256
 set t_Co=256
 
