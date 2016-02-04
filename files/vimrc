@@ -40,6 +40,8 @@ Plugin 'fatih/vim-go'
 " Auto close delimiters
 Plugin 'cohama/lexima.vim'
 
+call vundle#end()
+
 " enable loading plug-in files for file type
 " also required by vundle
 filetype plugin indent on
