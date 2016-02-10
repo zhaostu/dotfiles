@@ -29,6 +29,8 @@ Plugin 'gregsexton/gitv'
 Plugin 'ctrlpvim/ctrlp.vim'
 " file system explorer
 Plugin 'scrooloose/nerdtree'
+" commenting
+Plugin 'scrooloose/nerdcommenter'
 " code search with ack
 Plugin 'mileszs/ack.vim'
 " easily add/change/delete surroundings
