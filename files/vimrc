@@ -111,9 +111,6 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='molokai'
 
-" ctrlp.vim
-let g:ctrlp_map='<Leader>t'
-
 " vim-go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -188,7 +185,7 @@ nnoremap j gj
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
 " shortcut for NERDTree
-nnoremap <silent> <Leader>e :NERDTreeToggle<CR>
+nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
 
 " shortcut for Ack
 nnoremap <Leader>a :Ack 
