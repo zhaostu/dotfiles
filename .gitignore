@@ -2,3 +2,4 @@ backup
 files/vim/bundle/*
 files/oh-my-zsh/*
 files/zsh-syntax-highlighting/*
+files/vim/spell/*
