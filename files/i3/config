@@ -156,7 +156,7 @@ mode $mode_resize {
 # system commands
 set $mode_system "System: (l) lock, (e) logout, (r) reboot, (p) poweroff"
 mode $mode_system {
-    bindsym l exec --no-startup-id i3lock -i `find /usr/share/backgrounds -name "*.png" | shuf -n1` -t && sleep 1, mode "default"
+    bindsym l exec --no-startup-id ~/.i3/bin/lockscreen, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
     bindsym r exec --no-startup-id reboot, mode "default"
     bindsym p exec --no-startup-id poweroff, mode "default"
@@ -209,3 +209,5 @@ client.urgent           #2f343a #900000 #ffffff #900000
 exec_always --no-startup-id feh `find /usr/share/backgrounds | shuf -n1` --bg-scale
 # Start workrave if it exists.
 exec [ -x $(which workrave) ] && workrave
+# Automatically lock screen after inactivity
+exec --no-startup-id xautolock -time 5 -locker '~/.i3/bin/lockscreen'

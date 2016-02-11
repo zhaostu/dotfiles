@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+# Take a screenshot
+import -window root /tmp/lockscreen.png
+
+# Modify the image in place
+mogrify -scale 25% -virtual-pixel dither -spread 2 -scale 400% /tmp/lockscreen.png
+
+# Lock screen displaying this image
+i3lock -fei /tmp/lockscreen.png

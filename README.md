@@ -17,6 +17,8 @@ work on the latest Ubuntu.
 #### i3
  * `i3` tile window manager (Official [Ubuntu repository](https://i3wm.org/docs/repositories.html#_ubuntu_repository))
  * `fonts-inconsolata` monospace font
+ * `imagemagick` for generating image for lock screen
+ * `xautolock` for automatically locking screen
  * `xbacklight` change screen brightness
 
 ## Install
