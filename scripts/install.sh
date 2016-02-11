@@ -1,8 +1,4 @@
-#!/bin/sh
-
-# Exit if command fails or variable not set.
-set -e
-set -u
+#!/bin/sh -eu
 
 # The path containing the scripts.
 export SCRIPTS_PATH=$(dirname $(readlink -f $0))

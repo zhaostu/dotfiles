@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -eu
 
 # The path where the dotfiles should be installed.
 INSTALL_PATH=$HOME
