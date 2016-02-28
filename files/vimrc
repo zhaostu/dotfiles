@@ -39,6 +39,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/syntastic'
 " Google Go support
 Plugin 'fatih/vim-go'
+" Rust support
+Plugin 'rust-lang/rust.vim'
 " Auto close delimiters
 Plugin 'cohama/lexima.vim'
 
