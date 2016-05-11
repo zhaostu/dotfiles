@@ -8,6 +8,9 @@
     ci = commit -v
     st = status
     br = branch
+    up = !git fetch && git rebase --autostash FETCH_HEAD
     tree = log --oneline --graph --all --decorate
-[push]
-    default = current
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[core]
+    excludesfile = /home/stu/.gitignore_global
