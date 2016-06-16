@@ -13,4 +13,4 @@
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [core]
-    excludesfile = /home/stu/.gitignore_global
+    excludesfile = ~/.gitignore_global
