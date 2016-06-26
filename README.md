@@ -28,7 +28,7 @@ in your shell:
     wget http://goo.gl/tYPTH -O - | sh
 or
 
-    curl http://goo.gl/tYPTH | sh
+    curl -L http://goo.gl/tYPTH | sh
 
 To change the login shell to `zsh`, execute the following command:
 
