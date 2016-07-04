@@ -211,3 +211,5 @@ exec_always --no-startup-id feh `find /usr/share/backgrounds | shuf -n1` --bg-sc
 exec [ -x $(which workrave) ] && workrave
 # Automatically lock screen after inactivity
 exec --no-startup-id xautolock -time 5 -locker '~/.i3/bin/lockscreen'
+# XDG Autostart 
+exec [ -x $(which dex) ] && dex -ae GNOME
