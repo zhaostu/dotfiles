@@ -16,9 +16,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Airline
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 " OneDark color scheme
 Plugin 'joshdick/onedark.vim'
+Plugin 'joshdick/airline-onedark.vim'
 " git wrapper
 Plugin 'tpope/vim-fugitive'
 " gitk/gitg for Vim
@@ -111,7 +111,7 @@ endif
 let g:airline_symbols.branch='⎇  '
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='molokai'
+let g:airline_theme='onedark'
 
 " vim-go
 let g:go_highlight_functions = 1
