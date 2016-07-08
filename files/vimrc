@@ -17,10 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-" Solarized color scheme
-Plugin 'altercation/vim-colors-solarized'
-" Molokai color scheme
-Plugin 'tomasr/molokai'
+" OneDark color scheme
+Plugin 'joshdick/onedark.vim'
 " git wrapper
 Plugin 'tpope/vim-fugitive'
 " gitk/gitg for Vim
@@ -146,9 +144,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-" set terminal colors to 256
-set t_Co=256
-
 " set font in Vim GUI
 if has('gui_running')
   set guifont=Inconsolata\ Medium\ 12
@@ -157,16 +152,17 @@ endif
 " enable syntax highlighting
 syntax enable
 
+" use true color if possible
+if has('termguicolors')
+    set termguicolors
+else
+    set t_Co 256
+endif
+
 " color scheme
 try
-    " For solarized
-    "set background=dark
-    "let g:solarized_termcolors=256
-    "colorscheme solarized
-    " For molokai
-    let g:molokai_original = 1
-    let g:rehash256 = 1
-    colorscheme molokai
+    let g:onedark_termcolors=256
+    colorscheme onedark
 catch
     colorscheme desert
 endtry
