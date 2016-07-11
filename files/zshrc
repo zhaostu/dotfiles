@@ -41,6 +41,10 @@ unsetopt correct_all
 bindkey -M viins "^R" history-incremental-search-backward
 bindkey -M vicmd "^R" history-incremental-search-backward
 
+# Editors
+export VISUAL=vim
+export EDITOR=$VISUAL
+
 # Update dotfiles.
 alias dotfiles-update="$HOME/.dotfiles/scripts/update.sh"
 
