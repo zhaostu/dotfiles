@@ -44,14 +44,11 @@ bindkey -M vicmd "^R" history-incremental-search-backward
 # Update dotfiles.
 alias dotfiles-update="$HOME/.dotfiles/scripts/update.sh"
 
-# ack
-alias ack="ack-grep"
-
-# MySQL
-alias my="mysql -p"
-
 # sudo shortcuts
 alias apt-get="sudo apt-get"
+
+# vi is vim
+alias vi="vim"
 
 # Set up Google Cloud SDK
 if [ -d $HOME/google-cloud-sdk ]; then
