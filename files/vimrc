@@ -195,3 +195,9 @@ nnoremap <silent> <Leader>s :set spell!<CR>
 
 " remove trailing whitespace characters
 nnoremap <silent> <Leader>r :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
+" ignore files when expanding wildcards
+set wildignore+=*.pyc,*.pyo,*.pyd,*/*.egg-info/*
+set wildignore+=*/.git/*,*/.svn/*
+set wildignore+=*.a,*.o,*.so
+set wildignore+=*.zip,*.tar,*.gz,*.bz2
