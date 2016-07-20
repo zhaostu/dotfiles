@@ -60,8 +60,9 @@ if has('autocmd')
     autocmd FileType html* setlocal shiftwidth=2 tabstop=2 softtabstop=2
     " XML 2 space tabs
     autocmd FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2
-    " JavaScript 2 space tabs
+    " JavaScript and JSON 2 space tabs
     autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd FileType json setlocal shiftwidth=2 tabstop=2 softtabstop=2
     " Google Go uses tabs characters and don't need to show invisibles
     autocmd FileType go,godoc setlocal noexpandtab nolist
     " Makefile don't need to show invisibles
