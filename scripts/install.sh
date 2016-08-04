@@ -18,6 +18,9 @@ cd $BASE_PATH
 git submodule update --init > /dev/null 2>&1
 git submodule foreach 'git checkout master && git pull' > /dev/null 2>&1
 
+# Download lfs tracked files
+git lfs pull
+
 i=0
 for file in $CUSTOM_FILES
 do

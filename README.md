@@ -4,6 +4,7 @@ work on the latest Ubuntu.
 
 ## Requirements
  * `git`
+ * `git-lfs`
  * `vim`
  * `zsh`
 
