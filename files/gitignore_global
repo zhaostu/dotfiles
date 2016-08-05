@@ -10,3 +10,6 @@
 .DS_Store?
 Thumbs.db
 ._*
+
+# Log files
+*.log
