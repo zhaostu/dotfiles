@@ -16,7 +16,7 @@ refresh_monitor() {
         else
             if [ $prev_output ]; then
                 echo "Turning on $output, right of $prev_output"
-                xrandr --output $output --right-of $prev_output
+                xrandr --output $output --auto --right-of $prev_output
             else
                 echo "Turning on $output"
                 xrandr --output $output --auto
