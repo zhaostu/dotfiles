@@ -1,0 +1,33 @@
+#!/bin/sh
+
+refresh_monitor() {
+    local is_main='yes'
+    grep -q open /proc/acpi/button/lid/*/state
+    local lid_open=$?
+
+    for output in $(xrandr | grep ' connected' | cut -f1 -d' '); do
+        if [ $is_main ] && [ $lid_open -ne 0 ]; then
+            echo "Turning off $output"
+            xrandr --output $output --off
+        else
+            if [ $prev_output ]; then
+                echo "Turning on $output, right of $prev_output"
+                xrandr --output $output --right-of $prev_output
+            else
+                echo "Turning on $output"
+                xrandr --output $output --auto
+            fi
+            local prev_output=$output
+        fi
+        local is_main=''
+    done
+}
+
+if [ "$1" = '--daemon' ]; then
+    while true; do
+        refresh_monitor
+        sleep 5
+    done
+else
+    refresh_monitor
+fi
