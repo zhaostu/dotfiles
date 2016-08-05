@@ -5,6 +5,10 @@ refresh_monitor() {
     grep -q open /proc/acpi/button/lid/*/state
     local lid_open=$?
 
+    for output in $(xrandr | grep ' disconnected' | cut -f1 -d' '); do
+        xrandr --output $output --off
+    done
+
     for output in $(xrandr | grep ' connected' | cut -f1 -d' '); do
         if [ $is_main ] && [ $lid_open -ne 0 ]; then
             echo "Turning off $output"
