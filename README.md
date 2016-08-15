@@ -23,6 +23,9 @@ work on the latest Ubuntu.
  * `xautolock` for automatically locking screen
  * `xbacklight` change screen brightness
 
+#### Workrave
+ * `workrave` assist taking regular breaks
+
 ## Install
 Installing these dotfiles are easy, simply execute this command
 in your shell:
