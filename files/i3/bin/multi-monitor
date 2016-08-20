@@ -1,7 +1,9 @@
 #!/bin/sh
 
 refresh_monitor() {
-    local is_main='yes'
+    local is_main='main'
+    test -d /proc/acpi/button/lid
+    local lid_exist=$?
     grep -q open /proc/acpi/button/lid/*/state
     local lid_open=$?
 
@@ -10,7 +12,7 @@ refresh_monitor() {
     done
 
     for output in $(xrandr | grep ' connected' | cut -f1 -d' '); do
-        if [ $is_main ] && [ $lid_open -ne 0 ]; then
+        if [ $lid_exist -eq 0 ] && [ $is_main ] && [ $lid_open -ne 0 ]; then
             echo "Turning off $output"
             xrandr --output $output --off
         else
