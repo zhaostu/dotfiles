@@ -80,10 +80,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+m floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+m focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -122,9 +122,6 @@ bindsym $mod+Shift+0 move container to workspace 10
 # Move workspace to different outputs
 bindsym $mod+comma move workspace to output left
 bindsym $mod+period move workspace to output right
-
-# Detect and arrange monitors
-bindsym $mod+m exec --no-startup-id ~/.i3/bin/multi-monitor
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
