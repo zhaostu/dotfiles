@@ -164,7 +164,6 @@ endif
 
 " color scheme
 try
-    let g:base16colorspace=256
     colorscheme base16-eighties
 catch
     colorscheme desert
