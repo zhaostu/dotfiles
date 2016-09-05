@@ -6,3 +6,9 @@ fi
 # Set environment variables for Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Set environment variables for gnome-keyring
+if [ -n "$DESKTOP_SESSION" ];then
+    eval $(gnome-keyring-daemon --start)
+    export SSH_AUTH_SOCK
+fi
