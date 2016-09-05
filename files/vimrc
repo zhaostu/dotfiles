@@ -4,6 +4,9 @@ set nocompatible
 " set the character encoding
 set encoding=utf-8
 
+" set shell
+set shell=sh
+
 " required by Vundle
 filetype off
 
