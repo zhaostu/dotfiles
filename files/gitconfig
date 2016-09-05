@@ -8,12 +8,12 @@
     ci = commit -v
     st = status
     br = branch
-    up = !git fetch --prune && git rebase --autostash FETCH_HEAD
+    up = !git fetch && git rebase --autostash FETCH_HEAD
     tree = log --oneline --graph --all --decorate
     di = diff
     ds = diff --cached
 [push]
-    default = simple
+    default = current
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [core]
@@ -24,3 +24,5 @@
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
     required = true
+[fetch]
+    prune = true
