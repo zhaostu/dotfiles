@@ -1,6 +1,7 @@
 # Stu's Dotfiles
 This is my personal dotfiles. Feel free to take a look inside. It is meant to
-work on the latest Ubuntu.
+be used in latest Ubuntu or Arch Linux. In practice it is most often used
+with my [Arch Linux setup scripts](https://github.com/zhaostu/archup).
 
 ## Requirements
  * `git`
@@ -16,7 +17,8 @@ work on the latest Ubuntu.
  * `flake8` Python syntax and style checker
 
 #### i3
- * `i3` tile window manager (Official [Ubuntu repository](https://i3wm.org/docs/repositories.html#_ubuntu_repository))
+ * `i3` tile window manager (Official
+[Ubuntu repository](https://i3wm.org/docs/repositories.html#_ubuntu_repository))
  * `fonts-inconsolata` monospace font
  * `imagemagick` for generating image for lock screen
  * `feh` for setting desktop image
