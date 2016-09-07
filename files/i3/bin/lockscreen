@@ -1,10 +1,16 @@
 #!/bin/sh -e
 
+# Make a temporary file ending with png
+FILENAME=$(mktemp /tmp/XXXXXXXXXX.png)
+
 # Take a screenshot
-import -window root -screen /tmp/lockscreen.png
+import -window root -screen $FILENAME
 
 # Modify the image in place
-mogrify -scale 25% -virtual-pixel dither -spread 2 -scale 400% /tmp/lockscreen.png
+mogrify -scale 25% -virtual-pixel dither -spread 2 -scale 400% $FILENAME
 
 # Lock screen displaying this image
-i3lock -fei /tmp/lockscreen.png
+i3lock -fei $FILENAME
+
+# Remove the temporary file
+rm $FILENAME
