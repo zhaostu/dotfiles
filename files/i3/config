@@ -205,9 +205,11 @@ client.urgent           #2f343a #900000 #ffffff #900000
 exec_always --no-startup-id feh --randomize --bg-fill ~/.i3/wallpapers/*
 # Start workrave if it exists.
 exec [ -x $(which workrave) ] && workrave
+# Start IBus if it exists.
+exec [ -x $(which ibus-daemon) ] && ibus-daemon --daemonize --replace --xim
 # Automatically lock screen after inactivity
 exec --no-startup-id xautolock -time 5 -locker '~/.i3/bin/lockscreen'
 # XDG Autostart 
-exec [ -x $(which dex) ] && dex -ae GNOME
+exec [ -x $(which dex) ] && dex --autostart --environment GNOME
 # Rearrange multiple monitors automatically
 exec --no-startup-id (~/.i3/bin/multi-monitor --daemon &)
