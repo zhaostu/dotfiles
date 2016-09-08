@@ -1,0 +1,13 @@
+! Anti-aliasing
+Xft.antialias: true
+
+! Hinting
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+! Subpixel rendering
+Xft.rgba: rgb
+
+! LCD filter
+Xft.lcdfilter: lcddefault
+

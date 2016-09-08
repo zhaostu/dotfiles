@@ -13,7 +13,7 @@ FILES_PATH=$BASE_PATH/files
 BACKUP_PATH=$BASE_PATH/backup
 
 # List of dotfiles to install to the home directory, seperate by space.
-DOTFILES='gitconfig gitignore_global vim vimrc oh-my-zsh zshrc profile i3'
+DOTFILES='gitconfig gitignore_global vim vimrc oh-my-zsh zshrc profile i3 Xresources'
 
 # List of files to install to custom position, seperated by newline.
 # On each line, put the file and the target filename, seperated by space.
