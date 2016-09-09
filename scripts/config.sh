@@ -20,4 +20,5 @@ DOTFILES='gitconfig gitignore_global vim vimrc oh-my-zsh zshrc profile i3 Xresou
 CUSTOM_FILES='zsh-syntax-highlighting .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 virtualenvwrapper .oh-my-zsh/custom/plugins/virtualenvwrapper
 stu.zsh-theme .oh-my-zsh/custom/themes/stu.zsh-theme
-workrave.ini .workrave/workrave.ini'
+workrave.ini .workrave/workrave.ini
+termite .config/termite'

@@ -28,6 +28,9 @@ with my [Arch Linux setup scripts](https://github.com/zhaostu/archup).
 #### Workrave
  * `workrave` assist taking regular breaks
 
+# Termite
+ * `termite` a keyboard-centric VTE-based terminal
+
 ## Install
 Installing these dotfiles are easy, simply execute this command
 in your shell:
