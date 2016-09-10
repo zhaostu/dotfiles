@@ -1,27 +1,24 @@
 [options]
+font = Inconsolata 12
+allow_bold = true
+
+scrollback_lines = 10000
 scroll_on_output = false
 scroll_on_keystroke = true
+
 audible_bell = false
-mouse_autohide = false
-allow_bold = true
-dynamic_title = true
 urgent_on_bell = true
+
 clickable_url = true
-font = Inconsolata 12
-scrollback_lines = 10000
+filter_unmatched_urls = false
 search_wrap = true
 
-# "system", "on" or "off"
 cursor_blink = system
-
-# "block", "underline" or "ibeam"
 cursor_shape = block
 
-# Hide links that are no longer valid in url select overlay mode
-filter_unmatched_urls = true
-
-# emit escape sequences for extra modified keys
-#modify_other_keys = false
+dynamic_title = true
+modify_other_keys = false
+mouse_autohide = false
 
 [colors]
 # Base16 Eighties
@@ -49,23 +46,23 @@ color13 = #cc99cc
 color14 = #66cccc
 color15 = #f2f0ec
 
-# 256 color space
-color16 = #f99157
-color17 = #d27b53
-color18 = #393939
-color19 = #515151
-color20 = #a09f93
-color21 = #e8e6df
+# unused colors
+#color16 = #f99157
+#color17 = #d27b53
+#color18 = #393939
+#color19 = #515151
+#color20 = #a09f93
+#color21 = #e8e6df
 
 [hints]
-#font = Monospace 12
-#foreground = #dcdccc
-#background = #3f3f3f
-#active_foreground = #e68080
-#active_background = #3f3f3f
-#padding = 2
-#border = #3f3f3f
-#border_width = 0.5
-#roundness = 2.0
+font = Inconsolata 12
+foreground = #d3d0c8
+background = #2d2d2d
+active_foreground = #f99157
+active_background = #2d2d2d
+padding = 1
+border = #f99157
+border_width = 4
+roundness = 5.0
 
 # vim: ft=dosini cms=#%s
