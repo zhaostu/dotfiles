@@ -39,3 +39,5 @@ ${git_info}\
 ${virtualenv_info}\
 %{$FG[015]%}[%B%*%b]
 %{%B$CARET_COLOR%}$CARET %{$reset_color%}"
+
+# vim: ft=zsh
