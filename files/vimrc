@@ -152,7 +152,7 @@ set smartcase
 
 " set font in Vim GUI
 if has('gui_running')
-  set guifont=Inconsolata\ Medium\ 12
+  set guifont=Inconsolata\ 12
 endif
 
 " enable syntax highlighting
