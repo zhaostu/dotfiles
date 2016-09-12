@@ -30,7 +30,7 @@ rofi.color-window:                   #ffffff,#f5f5f5
 ! Separator style (none, dash, solid)
 rofi.separator-style:                solid
 ! Font
-rofi.font:                           Inconsolata 12
+rofi.font:                           Droid Sans Mono 12
 ! Enabled modes
 rofi.modi:                           combi,window,ssh
 ! The modi to combine in combi mode
