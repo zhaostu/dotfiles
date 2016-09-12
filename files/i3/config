@@ -35,7 +35,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id "rofi -show combi -combi-modi drun,run -modi combi,window,ssh"
+bindsym $mod+d exec --no-startup-id "rofi -show combi -combi-modi drun,run -modi combi,window,ssh -display-combi run"
 
 # change focus
 bindsym $mod+$left focus left
@@ -196,11 +196,13 @@ bar {
 }
 
 # Change the colors of window decorations.
-# class                 border  backgr. text    indicator
-client.focused          #0088cc #0088cc #ffffff #dddddd
-client.focused_inactive #333333 #333333 #888888 #292d2e
-client.unfocused        #333333 #333333 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
+# class                 border  backgr. text    indicator child_border
+client.focused          #e7e8eb #e7e8eb #70788d #eeeff1   #e7e8eb
+client.focused_inactive #2f343f #2f343f #afb8c6 #353a48   #2f343f
+client.unfocused        #2f343f #2f343f #8a939f #353a48   #2f343f
+client.urgent           #fc4138 #fc4138 #ffffff #f04a50   #fc4138
+
+client.background       #ffffff
 
 # Change the desktop background on start/restart
 exec_always --no-startup-id feh --randomize --bg-fill ~/.i3/wallpapers/*
