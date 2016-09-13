@@ -187,19 +187,19 @@ bar {
         separator   #5c616c
 
         #class              border  backgr. text
-        focused_workspace   #1e61b0 #5294e2 #ffffff
+        focused_workspace   #5294e2 #5294e2 #ffffff
         active_workspace    #353945 #353945 #ffffff
         inactive_workspace  #353945 #353945 #bac3cf
         urgent_workspace    #fc4138 #fc4138 #ffffff
-        binding_mode        #f27835 #f27835 #ffffff
+        binding_mode        #4dadd4 #4dadd4 #ffffff
     }
 }
 
 # Change the colors of window decorations.
 # class                 border  backgr. text    indicator child_border
-client.focused          #e7e8eb #e7e8eb #70788d #eeeff1   #e7e8eb
-client.focused_inactive #2f343f #2f343f #afb8c6 #353a48   #2f343f
-client.unfocused        #2f343f #2f343f #8a939f #353a48   #2f343f
+client.focused          #5294e2 #5294e2 #ffffff #1e61b0   #5294e2
+client.focused_inactive #e7e8eb #e7e8eb #70788d #eeeff1   #e7e8eb
+client.unfocused        #e7e8eb #e7e8eb #979dac #eeeff1   #e7e8eb
 client.urgent           #fc4138 #fc4138 #ffffff #f04a50   #fc4138
 
 client.background       #ffffff
