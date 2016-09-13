@@ -181,6 +181,7 @@ bar {
     position top
     status_command i3status --config ~/.i3/i3status.conf
     font pango:Droid Sans 11
+    separator_symbol ":"
     colors {
         background  #2b2e37
         statusline  #bac3cf
