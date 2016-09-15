@@ -50,6 +50,8 @@ alias dotfiles-update="$HOME/.dotfiles/scripts/update.sh"
 
 # sudo shortcuts
 alias apt-get="sudo apt-get"
+alias pacman="sudo pacman"
+alias systemctl="sudo systemctl"
 
 # vi is vim
 alias vi="vim"
