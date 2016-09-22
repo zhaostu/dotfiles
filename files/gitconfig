@@ -8,7 +8,7 @@
     ci = commit -v
     st = status
     br = branch
-    up = !git fetch && git rebase --autostash FETCH_HEAD
+    up = pull --rebase --autostash
     tree = log --oneline --graph --all --decorate
     di = diff
     ds = diff --cached
