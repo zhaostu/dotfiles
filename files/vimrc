@@ -23,7 +23,7 @@ Plug 'mhinz/vim-signify'
 " fast file access in Vim
 Plug 'ctrlpvim/ctrlp.vim'
 " file system explorer
-Plug 'scrooloose/nerdtree', { 'on': 'NerdTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " commenting
 Plug 'scrooloose/nerdcommenter'
 " code search with ack
