@@ -26,6 +26,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-fugitive'
 " gitk/gitg for Vim
 Plugin 'gregsexton/gitv'
+" show diff for vcs
+Plugin 'mhinz/vim-signify'
 " fast file access in Vim
 Plugin 'ctrlpvim/ctrlp.vim'
 " file system explorer
