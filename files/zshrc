@@ -61,3 +61,9 @@ if [ -d $HOME/google-cloud-sdk ]; then
     source $HOME/google-cloud-sdk/path.zsh.inc
     source $HOME/google-cloud-sdk/completion.zsh.inc
 fi
+
+# Allow termite to open new terminal in the same folder
+if [ $TERM = xterm-termite ] && [ -f /etc/profile.d/vte.sh ]; then
+    source /etc/profile.d/vte.sh
+fi
+
