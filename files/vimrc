@@ -7,50 +7,41 @@ set encoding=utf-8
 " set shell
 set shell=sh
 
-" required by Vundle
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin()
 
 " Airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Base16 themes
-Plugin 'chriskempson/base16-vim'
+Plug 'chriskempson/base16-vim'
 " git wrapper
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 " gitk/gitg for Vim
-Plugin 'gregsexton/gitv'
+Plug 'gregsexton/gitv'
 " show diff for vcs
-Plugin 'mhinz/vim-signify'
+Plug 'mhinz/vim-signify'
 " fast file access in Vim
-Plugin 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " file system explorer
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NerdTreeToggle' }
 " commenting
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 " code search with ack
-Plugin 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim'
 " easily add/change/delete surroundings
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 " syntax checking
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 " Google Go support
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 " Rust support
-Plugin 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim'
 " Auto close delimiters
-Plugin 'cohama/lexima.vim'
+Plug 'cohama/lexima.vim'
 
-call vundle#end()
+call plug#end()
 
 " enable loading plug-in files for file type
-" also required by vundle
 filetype plugin indent on
 
 " set 4 space tabs
@@ -87,7 +78,7 @@ set mouse=a
 
 if has('persistent_undo')
     " enable persistent undoes
-    set undodir=~/.vimundo
+    set undodir=~/.vim/undo
     set undofile
 endif
 

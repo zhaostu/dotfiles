@@ -74,14 +74,17 @@ pre_install(){
 }
 
 post_install(){
-    # Install/update/clean vim bundles through Vundle.
-    vim +BundleInstall! +BundleClean +qall < /dev/tty
+    # Create Vim's undo directory
+    mkdir -p $HOME/.vim/undo
+    # Get the vim-plug plugin
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+    # Install/update/clean vim plugins via vim-plug
+    vim +PlugUpdate +PlugClean! +qall < /dev/tty
 
     # Install/update Go binaries if Go is installed.
     if which go > /dev/null 2>&1 ; then
         vim +GoInstallBinaries +qall < /dev/tty
     fi
-
-    # Create Vim's undo directory
-    mkdir -p $HOME/.vimundo
 }
