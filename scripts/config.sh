@@ -21,4 +21,5 @@ CUSTOM_FILES='zsh-syntax-highlighting .oh-my-zsh/custom/plugins/zsh-syntax-highl
 virtualenvwrapper .oh-my-zsh/custom/plugins/virtualenvwrapper
 stu.zsh-theme .oh-my-zsh/custom/themes/stu.zsh-theme
 workrave.ini .workrave/workrave.ini
-termite .config/termite'
+termite .config/termite
+dunst .config/dunst'
