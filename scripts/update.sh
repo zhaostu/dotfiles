@@ -7,11 +7,6 @@ export SCRIPTS_PATH=$(dirname $(readlink -f $0))
 GIT_STATUS_FLAG='--porcelain --ignore-submodules --untracked-files=no'
 GIT_DIRTY=$(cd $SCRIPTS_PATH; git status $GIT_STATUS_FLAG 2> /dev/null | tail -n1)
 
-if [ -n "$GIT_DIRTY" ]; then
-    echo "Your installation folder has uncommitted changes. Aborting."
-    exit 1
-fi
-
 # Uninstall the old version.
 $SCRIPTS_PATH/uninstall.sh
 
