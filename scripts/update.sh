@@ -13,7 +13,7 @@ $SCRIPTS_PATH/uninstall.sh
 # Update the project itself.
 cd $SCRIPTS_PATH
 
-git pull --autostash origin master
+git pull --rebase --autostash origin master
 
 # Install the new version.
 $SCRIPTS_PATH/install.sh
