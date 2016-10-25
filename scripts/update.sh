@@ -13,7 +13,9 @@ $SCRIPTS_PATH/uninstall.sh
 # Update the project itself.
 cd $SCRIPTS_PATH
 
-git pull --rebase --autostash origin master
+git stash
+git pull origin master
+git stash pop
 
 # Install the new version.
 $SCRIPTS_PATH/install.sh
