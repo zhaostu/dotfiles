@@ -195,11 +195,11 @@ nnoremap <silent> <Leader>s :set spell!<CR>
 nnoremap <silent> <Leader>r :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " ignore files when expanding wildcards
-set wildignore+=*.pyc,*.pyo,*.pyd,*/*.egg-info/*
+set wildignore+=*.pyc,*.pyo,*.pyd,*/*.egg-info
 set wildignore+=*/.git/*,*/.svn/*
 set wildignore+=*.a,*.o,*.so
 set wildignore+=*.zip,*.tar,*.gz,*.bz2
-set wildignore+=*/node_modules/*
+set wildignore+=*/node_modules
 
 " respect wildignore with NERDTree
 let g:NERDTreeRespectWildIgnore = 1
