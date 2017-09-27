@@ -12,6 +12,8 @@
     tree = log --oneline --graph --all --decorate
     di = diff
     ds = diff --cached
+
+    git = "!exec git"
 [push]
     default = current
 [url "git@github.com:"]
