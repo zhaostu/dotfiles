@@ -5,7 +5,6 @@ with my [Arch Linux setup scripts](https://github.com/zhaostu/archup).
 
 ## Requirements
  * `git`
- * `git-lfs`
  * `vim`
  * `zsh`
 
@@ -17,13 +16,13 @@ with my [Arch Linux setup scripts](https://github.com/zhaostu/archup).
  * `flake8` Python syntax and style checker
 
 #### i3
- * `i3` tile window manager (Official
-[Ubuntu repository](https://i3wm.org/docs/repositories.html#_ubuntu_repository))
+ * `i3` tile window manager
  * `fonts-inconsolata` monospace font
  * `imagemagick` for generating image for lock screen
  * `feh` for setting desktop image
  * `xautolock` for automatically locking screen
  * `xbacklight` change screen brightness
+ * `git-lfs` for getting i3 wallpapers
 
 #### Workrave
  * `workrave` assist taking regular breaks
