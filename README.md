@@ -28,7 +28,7 @@ with my [Arch Linux setup scripts](https://github.com/zhaostu/archup).
 #### Workrave
  * `workrave` assist taking regular breaks
 
-# Termite
+#### Termite
  * `termite` a keyboard-centric VTE-based terminal
 
 ## Install
