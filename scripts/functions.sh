@@ -82,9 +82,4 @@ post_install(){
 
     # Install/update/clean vim plugins via vim-plug
     vim +PlugUpdate +PlugClean! +qall < /dev/tty
-
-    # Install/update Go binaries if Go is installed.
-    if which go > /dev/null 2>&1 ; then
-        vim +GoInstallBinaries +qall < /dev/tty
-    fi
 }

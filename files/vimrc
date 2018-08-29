@@ -32,12 +32,10 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-surround'
 " syntax checking
 Plug 'scrooloose/syntastic'
-" Google Go support
-Plug 'fatih/vim-go'
-" Rust support
-Plug 'rust-lang/rust.vim'
 " Auto close delimiters
 Plug 'cohama/lexima.vim'
+" Language pack collection
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
