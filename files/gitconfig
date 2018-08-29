@@ -17,7 +17,8 @@
 [push]
     default = current
 [url "git@github.com:"]
-    insteadOf = https://github.com/
+    pushInsteadOf = https://github.com/
+    pushInsteadOf = git://github.com/
 [core]
     excludesfile = ~/.gitignore_global
 [include]
