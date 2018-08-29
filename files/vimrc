@@ -152,7 +152,7 @@ endif
 syntax enable
 
 " use true color if possible
-if has('termguicolors')
+if has('termguicolors') && (has('gui_running') || $COLORTERM == 'truecolor')
     set termguicolors
 else
     set t_Co=256
