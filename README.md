@@ -9,20 +9,24 @@ with my [Arch Linux setup scripts](https://github.com/zhaostu/archup).
  * `zsh`
 
 ### Optional requirements
- * `silversearcher-ag` or `ack-grep` code searching like grep
+ * `the_silver_searcher` or `ack` code searching like grep
 
 #### Python
  * `virtualenvwrapper` wrapper for Python virtualenv
  * `flake8` Python syntax and style checker
 
 #### i3
- * `i3` tile window manager
- * `fonts-inconsolata` monospace font
+ * `i3-wm` tile window manager
+ * `ttf-inconsolata` monospace font
+ * `noto-fonts` GUI font
  * `imagemagick` for generating image for lock screen
  * `feh` for setting desktop image
+ * `xorg-xrandr` monitor control
+ * `xorg-xbacklight` change screen brightness
  * `xautolock` for automatically locking screen
- * `xbacklight` change screen brightness
  * `git-lfs` for getting i3 wallpapers
+ * `dunst` notification daemon
+ * `rofi` window switcher
 
 #### Workrave
  * `workrave` assist taking regular breaks

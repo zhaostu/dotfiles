@@ -13,7 +13,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Droid Sans 11
+font pango:Noto 10
 
 # Set mod key to Super (Windows)
 set $mod Mod4
@@ -180,7 +180,7 @@ bar {
     # i3bar position
     position top
     status_command i3status --config ~/.i3/i3status.conf
-    font pango:Droid Sans 11
+    font pango:Noto 10
     separator_symbol ":"
     colors {
         background  #2b2e37
