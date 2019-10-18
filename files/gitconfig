@@ -9,7 +9,7 @@
     st = status
     br = branch
     up = pull --rebase --autostash
-    tree = log --oneline --graph --all --decorate
+    tree = log --graph --all --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
     di = diff
     ds = diff --cached
 
