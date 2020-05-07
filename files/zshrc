@@ -67,3 +67,7 @@ if [ $TERM = xterm-termite ] && [ -f /etc/profile.d/vte.sh ]; then
     source /etc/profile.d/vte.sh
 fi
 
+# Include local zshrc file
+if [ -f $HOME/.zshrc.local ]; then
+    source $HOME/.zshrc.local
+fi
