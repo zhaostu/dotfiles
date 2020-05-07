@@ -13,7 +13,4 @@ if [ -n "$DESKTOP_SESSION" ];then
     export SSH_AUTH_SOCK
 fi
 
-# Set umask (for WSL)
-umask 022
-
 # vim: ft=sh
