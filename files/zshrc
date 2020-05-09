@@ -31,6 +31,11 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(vi-mode git command-not-found per-directory-history zsh-syntax-highlighting)
 
+# Include local zshrc file
+if [ -f $HOME/.zshrc.local ]; then
+    source $HOME/.zshrc.local
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -65,9 +70,4 @@ fi
 # Allow termite to open new terminal in the same folder
 if [ $TERM = xterm-termite ] && [ -f /etc/profile.d/vte.sh ]; then
     source /etc/profile.d/vte.sh
-fi
-
-# Include local zshrc file
-if [ -f $HOME/.zshrc.local ]; then
-    source $HOME/.zshrc.local
 fi
