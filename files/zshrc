@@ -56,18 +56,18 @@ alias systemctl="sudo systemctl"
 # vi is vim
 alias vi="vim"
 
-# Set up Google Cloud SDK
-if [ -d $HOME/google-cloud-sdk ]; then
-    source $HOME/google-cloud-sdk/path.zsh.inc
-    source $HOME/google-cloud-sdk/completion.zsh.inc
-fi
-
 # Allow termite to open new terminal in the same folder
 if [ $TERM = xterm-termite ] && [ -f /etc/profile.d/vte.sh ]; then
     source /etc/profile.d/vte.sh
 fi
 
-# Include local zshrc file
+# Include local zshrc file(s)
 if [ -f $HOME/.zshrc.local ]; then
     source $HOME/.zshrc.local
+fi
+
+if [ -d $HOME/.zshrc.local.d ]; then
+    for f in $(find $HOME/.zshrc.local.d -maxdepth 1 -type f); do
+        source $f
+    done
 fi
