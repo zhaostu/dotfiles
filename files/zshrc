@@ -56,6 +56,9 @@ alias systemctl="sudo systemctl"
 # vi is vim
 alias vi="vim"
 
+# bell
+alias bell="echo -e '\a'"
+
 # Allow termite to open new terminal in the same folder
 if [ $TERM = xterm-termite ] && [ -f /etc/profile.d/vte.sh ]; then
     source /etc/profile.d/vte.sh
